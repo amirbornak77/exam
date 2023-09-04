@@ -1,822 +1,1004 @@
 {% load static %}
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-
-   <!--- Basic Page Needs
+<!--[if lt IE 8]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <!--- Basic Page Needs
    ================================================== -->
-   <meta charset="utf-8">
-	<title>My Cv</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <meta charset="utf-8" />
+    <title>My Cv</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-   <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
    ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-	<!-- CSS
+    <!-- CSS
     ================================================== -->
-   <link rel="stylesheet" href="{% static 'css/default.css' %}">
-	<link rel="stylesheet" href="{% static 'css/layout.css' %}">
-   <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
-   <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/default.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/media-queries.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" />
 
-   <!-- Script
+    <!-- Script
    ================================================== -->
-	<script src="{% static 'js/modernizr.js' %}"></script>
+    <script src="{% static 'js/modernizr.js' %}"></script>
 
-   <!-- Favicons
+    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+    <link rel="shortcut icon" href="favicon.png" />
+  </head>
 
-</head>
-
-<body>
-
-   <!-- Header
+  <body>
+    <!-- Header
    ================================================== -->
-   <header id="home">
-
+    <header id="home">
       <nav id="nav-wrap">
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation"
+          >Show navigation</a
+        >
+        <a class="mobile-btn" href="#" title="Hide navigation"
+          >Hide navigation</a
+        >
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
+        <ul id="nav" class="nav">
+          <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+          <li><a class="smoothscroll" href="#about">About</a></li>
+          <li><a class="smoothscroll" href="#resume">Resume</a></li>
+          <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+          <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+          <li><a class="smoothscroll" href="#contact">Contact</a></li>
+        </ul>
+        <!-- end #nav -->
+      </nav>
+      <!-- end #nav-wrap -->
 
       <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">I'm {{name}} {{last_name}}.</h1>
-            <h3>I'm a Iranian based <span>graphic designer</span>, <span>SEO</span> and <span>webdesigner</span> creating awesome and
-            effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
-            <hr />
-            <ul class="social">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>
-         </div>
+        <div class="banner-text">
+          <h1 class="responsive-headline">I'm {{name}} {{last_name}}.</h1>
+          <h3>
+            I'm a Iranian based <span>Programmer</span>, <span>SEO</span> and
+            <span>webdesigner</span> creating awesome and effective visual
+            identities for companies of all sizes around the globe. Let's
+            <a class="smoothscroll" href="#about">start scrolling</a> and learn
+            more <a class="smoothscroll" href="#about">about me</a>.
+          </h3>
+          <hr />
+          <ul class="social">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-skype"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+        <a class="smoothscroll" href="#about"
+          ><i class="icon-down-circle"></i
+        ></a>
       </p>
+    </header>
+    <!-- Header End -->
 
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
+    <!-- About Section
    ================================================== -->
-   <section id="about">
-
+    <section id="about">
       <div class="row">
+        <div class="three columns">
+          <img
+            class="profile-pic"
+            src="{% static 'images/profilepic.jpg' %}"
+            alt=""
+          />
+        </div>
 
-         <div class="three columns">
+        <div class="nine columns main-col">
+          <h2>About Me</h2>
 
-            <img class="profile-pic"  src="{% static 'images/profilepic.jpg' %}" alt="" />
+          <p>
+            An SEO Specialist with entry-level experiences specialiazing in
+            Google Analytics,digital marketing on-page optimazation,and link
+            building campaigns. Adept at improving SEO performance for websites
+            by leveraging data analytics and market research.
+          </p>
 
-         </div>
+          <div class="row">
+            <div class="columns contact-details">
+              <h2>Contact Details</h2>
+              <p class="address">
+                <span>{{name}} {{last_name}} </span><br />
+                <span
+                  >1600 Amphitheatre Parkway<br />
+                  Mountain View, CA 94043 US </span
+                ><br />
+                <span>(123)456-7890</span><br />
+                <span>anyone@website.com</span>
+              </p>
+            </div>
 
-         <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p>
-            An SEO Specialist with entry-level experiences specialiazing in Google Analytics,digital marketing
-            on-page optimazation,and link building campaigns. Adept at improving SEO performance for websites by 
-            leveraging data analytics and market research.
-            
-            </p>
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>{{name}} {{last_name}} </span><br>
-						   <span>1600 Amphitheatre Parkway<br>
-						         Mountain View, CA 94043 US
-                     </span><br>
-						   <span>(123)456-7890</span><br>
-                     <span>anyone@website.com</span>
-					   </p>
-
-               </div>
-
-               <div class="columns download">
-                  <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
+            <div class="columns download">
+              <p>
+                <a href="#" class="button"
+                  ><i class="fa fa-download"></i>Download Resume</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end .main-col -->
       </div>
+    </section>
+    <!-- About Section End-->
 
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
+    <!-- Resume Section
    ================================================== -->
-   <section id="resume">
-
+    <section id="resume">
       <!-- Education
       ----------------------------------------------- -->
       <div class="row education">
+        <div class="three columns header-col">
+          <h1><span>Education</span></h1>
+        </div>
 
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
+        <div class="nine columns main-col">
+          <div class="row item">
+            <div class="twelve columns">
+              <h3>University of art and literature</h3>
+              <p class="info">
+                B.A. Degree in English lecturer<span>&bull;</span>
+                <em class="date">April 2007</em>
+              </p>
 
-         <div class="nine columns main-col">
+              <p>
+                Experienced English Lecturer with a demonstrated history of
+                working in the higher education industry. Skilled in curriculum
+                development, classroom management, and student engagement.
+                Highly knowledgeable in English literature, language, and
+                writing, with a focus on contemporary and multicultural
+                perspectives. Proven ability to communicate complex concepts to
+                students of diverse backgrounds and abilities, resulting in
+                measurable academic growth and success. Dedicated to fostering a
+                positive learning environment through innovative teaching
+                methods and ongoing professional development.
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
 
-            <div class="row item">
+          <div class="row item">
+            <div class="twelve columns">
+              <h3>Language school</h3>
+              <p class="info">
+                <span>&bull;</span> <em class="date">March 2003</em>
+              </p>
 
-               <div class="twelve columns">
-
-                  <h3>University of Cool art and literature</h3>
-                  <p class="info">B.A. Degree in English lecturer<span>&bull;</span> <em class="date">April 2007</em></p>
-
-                  <p>
-                     
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Language school</h3>
-                  <p class="info"><span>&bull;</span> <em class="date">March 2003</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
+              <p>
+                I have a strong background in language learning, having attended
+                several language schools throughout my academic career. My
+                language studies began in high school where I attended
+                after-school French language classes, and continued during my
+                undergraduate years where I studied at University and attended
+                intensive language courses. These experiences have equipped me
+                with strong language skills and cultural sensitivity, which I
+                believe will be valuable assets in any professional setting.
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
+        </div>
+        <!-- main-col end -->
+      </div>
+      <!-- End Education -->
 
       <!-- Work
       ----------------------------------------------- -->
       <div class="row work">
+        <div class="three columns header-col">
+          <h1><span>Work</span></h1>
+        </div>
 
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
+        <div class="nine columns main-col">
+          <div class="row item">
+            <div class="twelve columns">
+              <h3>Hamrahcel,Hamrah service</h3>
+              <p class="info">
+                Data Entry and SEO <span>&bull;</span>
+                <em class="date">March 2010 - Present</em>
+              </p>
 
-         <div class="nine columns main-col">
+              <p>
+                I have extensive experience in data entry, including entering
+                and verifying data, managing databases, and maintaining accurate
+                records. I am proficient in various data entry software and
+                tools, such as Microsoft Excel and Google Sheets. I possess a
+                keen eye for detail and am able to maintain a high level of
+                accuracy in my work. Additionally, I have strong organizational
+                and time management skills, allowing me to manage multiple tasks
+                and deadlines effectively. My expertise in data entry has been
+                honed through years of experience in various roles, making me a
+                valuable asset to any team.
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
 
-            <div class="row item">
+          {% comment %}
+          <div class="row item">
+            <div class="twelve columns">
+              <h3>Super Cool Studio</h3>
+              <p class="info">
+                UX Designer <span>&bull;</span>
+                <em class="date">March 2007 - February 2010</em>
+              </p>
 
-               <div class="twelve columns">
-
-                  <h3>Awesome Design Studio</h3>
-                  <p class="info">Senior UX Designer <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
-
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Super Cool Studio</h3>
-                  <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
+              <p>
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
+                amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                tincidunt auctor a ornare odio. Sed non mauris vitae erat
+              </p>
+            </div>
+          </div>
+          {% endcomment %}
+          <!-- item end -->
+        </div>
+        <!-- main-col end -->
+      </div>
+      <!-- End Work -->
 
       <!-- Skills
       ----------------------------------------------- -->
       <div class="row skill">
+        <div class="three columns header-col">
+          <h1><span>Skills</span></h1>
+        </div>
 
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
+        <div class="nine columns main-col">
+          <p>
+            As a bilingual candidate fluent in both French and English, I have
+            the ability to communicate effectively in both languages. In
+            addition, I possess excellent organizational and time management
+            skills, as demonstrated through my ability to prioritize tasks and
+            meet deadlines. I am a quick learner, and adaptable to new
+            situations and technologies. Furthermore, I have a strong attention
+            to detail and am able to work independently or as part of a team. In
+            summary, I believe my language abilities and transferable skills
+            make me a valuable addition to any workplace.
+          </p>
 
-         <div class="nine columns main-col">
+          <div class="bars">
+            <ul class="skills">
+              <li>
+                <span class="bar-expand photoshop"></span><em>Photoshop</em>
+              </li>
+              <li>
+                <span class="bar-expand illustrator"></span><em>Illustrator</em>
+              </li>
+              <li>
+                <span class="bar-expand wordpress"></span><em>Wordpress</em>
+              </li>
+              <li><span class="bar-expand css"></span><em>CSS</em></li>
+              <li><span class="bar-expand html5"></span><em>HTML5</em></li>
+              <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+            </ul>
+          </div>
+          <!-- end skill-bars -->
+        </div>
+        <!-- main-col end -->
+      </div>
+      <!-- End skills -->
+    </section>
+    <!-- Resume Section End-->
 
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt.
-            </p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
+    <!-- Portfolio Section
    ================================================== -->
-   <section id="portfolio">
-
+    <section id="portfolio">
       <div class="row">
+        <div class="twelve columns collapsed">
+          <h1>Check Out Some of My Works.</h1>
 
-         <div class="twelve columns collapsed">
-
-            <h1>Check Out Some of My Works.</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="{% static 'images/portfolio/coffee.jpg' %}">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Coffee</h5>
-                              <p>Illustrration</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+          <!-- portfolio-wrapper -->
+          <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-01" title="">
+                  <img
+                    alt=""
+                    src="{% static 'images/portfolio/coffee.jpg' %}"
+                  />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Coffee</h5>
+                      <p>Illustrration</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="{% static 'images/portfolio/console.jpg' %}">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Console</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-02" title="">
+                  <img
+                    alt=""
+                    src="{% static 'images/portfolio/console.jpg' %}"
+                  />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Console</h5>
+                      <p>Web Development</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="{% static 'images/portfolio/judah.jpg' %}">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Judah</h5>
-                              <p>Webdesign</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-03" title="">
+                  <img alt="" src="{% static 'images/portfolio/judah.jpg' %}" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Judah</h5>
+                      <p>Webdesign</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="{% static 'images/portfolio/into-the-light.jpg' %}">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Into The Light</h5>
-                              <p>Photography</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-04" title="">
+                  <img
+                    alt=""
+                    src="{% static 'images/portfolio/into-the-light.jpg' %}"
+                  />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Into The Light</h5>
+                      <p>Photography</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="{% static 'images/portfolio/farmerboy.jpg' %}">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Farmer Boy</h5>
-                              <p>Branding</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-05" title="">
+                  <img
+                    alt=""
+                    src="{% static 'images/portfolio/farmerboy.jpg' %}"
+                  />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Farmer Boy</h5>
+                      <p>Branding</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
-                        <img alt="" src="{% static 'images/portfolio/girl.jpg' %}">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Girl</h5>
-                              <p>Photography</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-06" title="">
+                  <img alt="" src="{% static 'images/portfolio/girl.jpg' %}" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Girl</h5>
+                      <p>Photography</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="" src="{% static 'images/portfolio/origami.jpg' %}">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Origami</h5>
-                              <p>Illustrration</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-07" title="">
+                  <img
+                    alt=""
+                    src="{% static 'images/portfolio/origami.jpg' %}"
+                  />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Origami</h5>
+                      <p>Illustrration</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-08" title="">
-                        <img alt="" src="{% static 'images/portfolio/retrocam.jpg' %}">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Retrocam</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-08" title="">
+                  <img
+                    alt=""
+                    src="{% static 'images/portfolio/retrocam.jpg' %}"
+                  />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Retrocam</h5>
+                      <p>Web Development</p>
+                    </div>
                   </div>
-          		</div>  <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
+          </div>
+          <!-- portfolio-wrapper end -->
+        </div>
+        <!-- twelve columns end -->
 
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
+        <!-- Modal Popup
 	      --------------------------------------------------------------- -->
 
-         <div id="modal-01" class="popup-modal mfp-hide">
+        <div id="modal-01" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="{% static 'images/portfolio/modals/m-coffee.jpg' %}"
+            alt=""
+          />
 
-		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-coffee.jpg' %}" alt="" />
+          <div class="description-box">
+            <h4>Coffee Cup</h4>
+            <p>This is about my Motivate</p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Branding, Webdesign</span
+            >
+          </div>
 
-		      <div class="description-box">
-			      <h4>Coffee Cup</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
+          <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-01 End -->
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+        <div id="modal-02" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="{% static 'images/portfolio/modals/m-console.jpg' %}"
+            alt=""
+          />
 
-	      </div><!-- modal-01 End -->
+          <div class="description-box">
+            <h4>Console</h4>
+            <p>
+              A console controller is a device used to interact with video games
+              on a gaming console. It typically includes buttons, analog sticks,
+              and triggers that players can use to move their characters,
+              perform actions, and navigate menus. Modern controllers may also
+              feature advanced features like touchscreens, motion sensors, and
+              vibration feedback to enhance the gaming experience. Console
+              controllers are essential for console gaming, allowing players to
+              experience their favorite games with intuitive, tactile controls.
+            </p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Branding, Web Development</span
+            >
+          </div>
 
-         <div id="modal-02" class="popup-modal mfp-hide">
+          <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-02 End -->
 
-		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-console.jpg' %}" alt="" />
+        <div id="modal-03" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="{% static 'images/portfolio/modals/m-judah.jpg' %}"
+            alt=""
+          />
 
-		      <div class="description-box">
-			      <h4>Console</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
-		      </div>
+          <div class="description-box">
+            <h4>Judah</h4>
+            <p>
+              The sculpture of a lion is a majestic and powerful piece of art.
+              It captures the essence of this magnificent animal with its
+              detailed features, sharp claws, powerful muscles, and fierce
+              expression. The lion's mane is intricately carved, giving it a
+              sense of movement and life. The sculpture is designed to be
+              imposing and awe-inspiring, reminding us of the lion's place as
+              the king of the jungle. Whether as a standalone piece or as part
+              of a larger exhibit, the sculpture of a lion is sure to command
+              attention and respect.
+            </p>
+            <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+          </div>
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+          <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-03 End -->
 
-	      </div><!-- modal-02 End -->
+        <div id="modal-04" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="{% static 'images/portfolio/modals/m-intothelight.jpg' %}"
+            alt=""
+          />
 
-         <div id="modal-03" class="popup-modal mfp-hide">
+          <div class="description-box">
+            <h4>Into the Light</h4>
+            <p>
+              As the people in the cave emerge into the light, they are both
+              excited and frightened by what they see. The bright light floods
+              their eyes, and they squint in disbelief. They make out shapes and
+              colors they have never seen before. The green grass, the blue sky,
+              and the vibrant colors of the flowers are stunning. They feel the
+              warmth of the sun on their skin and hear the birds singing in the
+              trees. It is overwhelming and almost too much to take in at once,
+              but they are eager to explore this new world and discover all its
+              wonders.
+            </p>
+            <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+          </div>
 
-		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-judah.jpg' %}" alt="" />
+          <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-04 End -->
 
-		      <div class="description-box">
-			      <h4>Judah</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
-		      </div>
+        <div id="modal-05" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="{% static 'images/portfolio/modals/m-farmerboy.jpg' %}"
+            alt=""
+          />
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+          <div class="description-box">
+            <h4>Farmer Boy</h4>
+            <p>
+              The vintage car stood quietly on the roadside, its once vibrant
+              paint now faded and peeling. Its metallic body reflected the
+              sunlight in muted tones, as if holding onto memories of its glory
+              days. The black and white filter of the photograph added to the
+              car's nostalgic charm, making it feel like a glimpse into a bygone
+              era. Despite its age, this car still held a certain mystique that
+              could capture anyone's imagination and transport them back in
+              time.
+            </p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Branding, Webdesign</span
+            >
+          </div>
 
-	      </div><!-- modal-03 End -->
+          <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-05 End -->
 
-         <div id="modal-04" class="popup-modal mfp-hide">
+        <div id="modal-06" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="{% static 'images/portfolio/modals/m-girl.jpg' %}"
+            alt=""
+          />
 
-		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-intothelight.jpg' %}" alt="" />
+          <div class="description-box">
+            <h4>Girl</h4>
+            <p>
+              A young woman with sunglasses is seen resting on a pile of rocks
+              while taking a selfie. The rocks look like they are by a beach or
+              a riverbank, with the clear blue sky and the sun shining brightly
+              in the background. The woman seems to be enjoying her time, with a
+              relaxed and happy expression on her face as she snaps the photo
+              with her phone. It's a perfect moment captured in time that exudes
+              rest and relaxation, making everyone want to be in her shoes,
+              living life to the fullest.
+            </p>
+            <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+          </div>
 
-		      <div class="description-box">
-			      <h4>Into the Light</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
+          <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-06 End -->
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+        <div id="modal-07" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="{% static 'images/portfolio/modals/m-origami.jpg' %}"
+            alt=""
+          />
 
-	      </div><!-- modal-04 End -->
+          <div class="description-box">
+            <h4>Origami</h4>
+            <p>
+              A stunning contrast is created with the white handmade origami
+              against a vibrant red background. The intricate folds and precise
+              creases of the origami make it an impressive piece of art. The
+              background adds a pop of color, highlighting the beauty of the
+              origami even further. The simplicity of the white origami against
+              the boldness of the red background creates a striking visual
+              impact that is sure to catch the eye and leave a lasting
+              impression. Overall, this piece is a perfect blend of artistry and
+              creativity.
+            </p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Branding, Illustration</span
+            >
+          </div>
 
-         <div id="modal-05" class="popup-modal mfp-hide">
+          <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-07 End -->
 
-		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-farmerboy.jpg' %}" alt="" />
+        <div id="modal-08" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="{% static 'images/portfolio/modals/m-retrocam.jpg' %}"
+            alt=""
+          />
 
-		      <div class="description-box">
-			      <h4>Farmer Boy</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
+          <div class="description-box">
+            <h4>Retrocam</h4>
+            <p>
+              A retro camera is a style of camera that pays homage to older,
+              vintage models. These cameras often have an analog look and feel,
+              with features like manual focus and film capabilities. They may
+              also incorporate modern technology, such as digital image sensors
+              and connectivity options. Retro cameras appeal to photographers
+              who enjoy the tactile experience of film and want a camera with a
+              unique aesthetic. They are often used for artistic or creative
+              purposes, such as documentary photography, street photography, or
+              personal projects.
+            </p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Webdesign, Photography</span
+            >
+          </div>
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-05 End -->
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-girl.jpg' %}" alt="" />
-
-		      <div class="description-box">
-			      <h4>Girl</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-06 End -->
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-origami.jpg' %}" alt="" />
-
-		      <div class="description-box">
-			      <h4>Origami</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-07 End -->
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-retrocam.jpg' %}" alt="" />
-
-		      <div class="description-box">
-			      <h4>Retrocam</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-01 End -->
-
-
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-
-            <h1><span>Get Hosting.</span></h1>
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><span class="lead">Unde Omnis Iste</span></h2>
-            <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p>
-
-         </div>
-
-         <div class="three columns action">
-
-
-
-         </div>
-
+          <div class="link-box">
+            <a href="http://www.behance.net" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-01 End -->
       </div>
+      <!-- row End -->
+    </section>
+    <!-- Portfolio Section End-->
 
-   </section> <!-- Call-To-Action Section End-->
-
-
-   <!-- Testimonials Section
+    <!-- Call-To-Action Section
    ================================================== -->
-   <section id="testimonials">
+    <section id="call-to-action">
+      <div class="row">
+        <div class="two columns header-col">
+          <h1><span>Get Hosting.</span></h1>
+        </div>
 
+        <div class="seven columns">
+          <h2><span class="lead">Make The World Perfect!</span></h2>
+          <p>
+            <span class="lead"
+             >Achieving a perfect world would require collective efforts of
+              individuals, organizations, and governments. This would involve
+              addressing issues such as poverty, inequality, climate change, and
+              discrimination. The eradication of these problems would require a
+              change in mindset and behavior towards sustainable development,
+              equitable distribution of resources, and a commitment to upholding
+              human rights. Education and awareness must be made priorities, and
+              policies implemented to promote social justice. With these steps,
+              we can work towards building a world where everyone has the
+              opportunity to prosper and thrive in an equitable and sustainable
+              environment.
+            </span>
+          </p>
+        </div>
+
+        <div class="three columns action"></div>
+      </div>
+    </section>
+    <!-- Call-To-Action Section End-->
+
+    <!-- Testimonials Section
+   ================================================== -->
+    <section id="testimonials">
       <div class="text-container">
+        <div class="row">
+          <div class="two columns header-col">
+            <h1><span>Client Testimonials</span></h1>
+          </div>
 
-         <div class="row">
+          <div class="ten columns flex-container">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <blockquote>
+                    <p>
+                      Your work is going to fill a large part of your life, and
+                      the only way to be truly satisfied is to do what you
+                      believe is great work. And the only way to do great work
+                      is to love what you do. If you haven't found it yet, keep
+                      looking. Don't settle. As with all matters of the heart,
+                      you'll know when you find it.
+                    </p>
+                    <cite>Steve Jobs</cite>
+                  </blockquote>
+                </li>
+                <!-- slide ends -->
 
-            <div class="two columns header-col">
-
-               <h1><span>Client Testimonials</span></h1>
-
+                <li>
+                  <blockquote>
+                    <p>
+                      This is Photoshop's version of Lorem Ipsum. Proin gravida
+                      nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                      quis bibendum auctor, nisi elit consequat ipsum, nec
+                      sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                      vulputate cursus a sit amet mauris.
+                    </p>
+                    <cite>Mr. Adobe</cite>
+                  </blockquote>
+                </li>
+                <!-- slide ends -->
+              </ul>
             </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                           </p>
-                           <cite>Mr. Adobe</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-       </div>  <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-         <div class="row section-head">
-
-            <div class="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
-            </div>
-
-            <div class="ten columns">
-
-                  <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                  voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-                  </p>
-
-            </div>
-
-         </div>
-
-         <div class="row">
-
-            <div class="eight columns">
-
-               <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
-                  </div>
-
-                  <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                  </div>
-
-                  <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                  </div>
-
-                  <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="{% static 'images/loader.gif' %}%">
-                     </span>
-                  </div>
-
-					</fieldset>
-				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning"> Error boy</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
-            </div>
-
-
-            <aside class="four columns footer-widgets">
-
-               <div class="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
-					   <p class="address">
-						   Jonathan Doe<br>
-						   1600 Amphitheatre Parkway <br>
-						   Mountain View, CA 94043 US<br>
-						   <span>(123) 456-7890</span>
-					   </p>
-
-				   </div>
-
-               <div class="widget widget_tweets">
-
-                  <h4 class="widget-title">Latest Tweets</h4>
-
-                  <ul id="twitter">
-                     <li>
-                        <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">2 Days Ago</a></b>
-                     </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
-                  </ul>
-
-		         </div>
-
-            </aside>
-
+            <!-- div.flexslider ends -->
+          </div>
+          <!-- div.flex-container ends -->
+        </div>
+        <!-- row ends -->
       </div>
+      <!-- text-container ends -->
+    </section>
+    <!-- Testimonials Section End-->
 
-   </section> <!-- Contact Section End-->
-
-
-   <!-- footer
+    <!-- Contact Section
    ================================================== -->
-   <footer>
+    <section id="contact">
+      <div class="row section-head">
+        <div class="two columns header-col">
+          <h1><span>Get In Touch.</span></h1>
+        </div>
+
+        <div class="ten columns">
+          <p class="lead">
+           Let's Talk!
+          </p>
+        </div>
+      </div>
 
       <div class="row">
+        <div class="eight columns">
+          <!-- form -->
+          <form action="" method="post" id="contactForm" name="contactForm">
+            <fieldset>
+              <div>
+                <label for="contactName"
+                  >Name <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  value=""
+                  size="35"
+                  id="contactName"
+                  name="contactName"
+                />
+              </div>
 
-         <div class="twelve columns">
+              <div>
+                <label for="contactEmail"
+                  >Email <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  value=""
+                  size="35"
+                  id="contactEmail"
+                  name="contactEmail"
+                />
+              </div>
 
-            <ul class="social-links">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              <div>
+                <label for="contactSubject">Subject</label>
+                <input
+                  type="text"
+                  value=""
+                  size="35"
+                  id="contactSubject"
+                  name="contactSubject"
+                />
+              </div>
+
+              <div>
+                <label for="contactMessage"
+                  >Message <span class="required">*</span></label
+                >
+                <textarea
+                  cols="50"
+                  rows="15"
+                  id="contactMessage"
+                  name="contactMessage"
+                ></textarea>
+              </div>
+
+              <div>
+                <button class="submit">Submit</button>
+                <span id="image-loader">
+                  <img alt="" src="{% static 'images/loader.gif' %}%" />
+                </span>
+              </div>
+            </fieldset>
+          </form>
+          <!-- Form End -->
+
+          <!-- contact-warning -->
+          <div id="message-warning">Error boy</div>
+          <!-- contact-success -->
+          <div id="message-success">
+            <i class="fa fa-check"></i>Your message was sent, thank you!<br />
+          </div>
+        </div>
+
+        <aside class="four columns footer-widgets">
+          <div class="widget widget_contact">
+            <h4>Address and Phone</h4>
+            <p class="address">
+              {{name}} {{last_name}}<br />
+              1600 Amphitheatre Parkway <br />
+              Mountain View, CA 94043 US<br />
+              <span>(123) 456-7890</span>
+            </p>
+          </div>
+
+          <div class="widget widget_tweets">
+            <h4 class="widget-title">Latest Tweets</h4>
+
+            <ul id="twitter">
+              <li>
+                <span>
+                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                  bibendum auctor, nisi elit consequat ipsum
+                  <a href="#">http://t.co/CGIrdxIlI3</a>
+                </span>
+                <b><a href="#">2 Days Ago</a></b>
+              </li>
+              <li>
+                <span>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi
+                  <a href="#">http://t.co/CGIrdxIlI3</a>
+                </span>
+                <b><a href="#">3 Days Ago</a></b>
+              </li>
             </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
+          </div>
+        </aside>
       </div>
+    </section>
+    <!-- Contact Section End-->
 
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
+    <!-- footer
    ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' %}"></script>
-   <script>window.jQuery || document.write('<script src="{% static 'js/jquery-1.10.2.min.js' %}"><\/script>')</script>
-   <script type="text/javascript" src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"></script>
+    <footer>
+      <div class="row">
+        <div class="twelve columns">
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-skype"></i></a>
+            </li>
+          </ul>
 
-   <script src="{% static 'js/jquery.flexslider.js' %}"></script>
-   <script src="{% static 'js/waypoints.js' %}"></script>
-   <script src="{% static 'js/jquery.fittext.js' %}"></script>
-   <script src="{% static 'js/magnific-popup.js' %}"></script>
-   <script src="{% static 'js/init.js' %}"></script>
+          <ul class="copyright">
+            <li>&copy; Copyright 2014 CeeVee</li>
+            <li>
+              Design by
+              <a
+                href="http://www.styleshout.com/"
+                title="Styleshout"
+                target="_blank"
+                >Styleshout</a
+              >
+            </li>
+          </ul>
+        </div>
 
-</body>
+        <div id="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#home"
+            ><i class="icon-up-open"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End-->
 
+    <!-- Java Script
+   ================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' %}"></script>
+    <script>
+      window.jQuery || document.write('<script src="{% static 'js/jquery-1.10.2.min.js' %}"><\/script>')
+    </script>
+    <script
+      type="text/javascript"
+      src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"
+    ></script>
+
+    <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+    <script src="{% static 'js/waypoints.js' %}"></script>
+    <script src="{% static 'js/jquery.fittext.js' %}"></script>
+    <script src="{% static 'js/magnific-popup.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
+  </body>
 </html>
